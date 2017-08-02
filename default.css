@@ -1,0 +1,431 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #333 url(images/overlay.png) repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    color: rgba(0,0,0,.8);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-transform: uppercase;
+    font-weight: 300;
+    color: #0000ff;
+}
+
+h2 {
+    padding: 0px 0px 10px 0px;
+    font-size: 1.5em;
+}
+
+p, ol, ul {
+    margin-top: 0px;
+}
+
+p {
+    line-height: 100%;
+}
+
+strong {
+}
+
+a {
+    color: rgba(0,0,0,.8);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+img.border {
+}
+
+img.alignleft {
+    float: left;
+}
+
+img.alignright {
+    float: right;
+}
+
+img.aligncenter {
+    margin: 0px auto;
+}
+
+hr {
+    display: none;
+}
+
+/** WRAPPER */
+
+#wrapper {
+    background: #FFF;
+    margin: 0px 20px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/** HEADER */
+
+#header {
+    overflow: hidden;
+    height: 100px;
+}
+
+/** LOGO */
+
+#logo {
+    height: 150px;
+    padding: 0px 0px 0px 0px;
+}
+
+#logo h1, #logo p {
+    margin: 0;
+    padding: 0;
+}
+
+#logo h1 {
+    letter-spacing: -1px;
+//text-transform: lowercase;
+    font-size: 3.5em;
+}
+
+#logo p {
+    padding: 0px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: rgba(0,0,0,.4);
+}
+
+#logo p a {
+    color: rgba(0,0,0,.4);
+}
+
+#logo a {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+}
+
+/** MENU */
+
+#menu {
+    overflow: hidden;
+    background: #800080;
+}
+
+#menu ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: block;
+    padding: 0px 40px 0px 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(255,255,255,0.5);
+    border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+#menu .current_page_item a {
+}
+
+#menu .last {
+    border-right: none;
+}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+.title
+{
+    margin-bottom: 3em;
+}
+
+.title h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    color: rgba(255,255,255,0.9);
+}
+
+.title .byline
+{
+    padding-top: 0.50em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #6F6F6F;
+}
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.button
+{
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0em 1em;
+    background: #308576;
+    letter-spacing: 0.10em;
+    line-height: 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFFc;
+}
+#BackButton
+{    display: inline-block;
+    text-align: center;
+    text-align: left;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #308576;
+
+
+}
+
+
+
+/*********************************************************************************/
+/* TABS Style                                                                  */
+/*********************************************************************************/
+
+ul#tabs{overflow: hidden;
+    background: #308576}
+
+ul#tabs {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+
+
+ul#tabs { list-style-type: none; margin: 30px 977px 0px 60px; padding: 10 0 0.3em 0; }
+ul#tabs {text-transform: uppercase;
+//text-align: center;
+    font-size: 14px;}
+ul#tabs li { display: inline; }
+ul#tabs li a {color: rgba(255,255,255,0.5);background: #308576;  solid #c9c3ba; border-bottom: none; padding: .2em; text-decoration: none; }
+ul#tabs li a:hover { color: rgba(255,255,255,0.8); }
+ul#tabs li a.selected {color: rgba(0,0,0,.4);  font-weight: bold; padding: 0.7em .38em 0.38em 0.25em; background-color: #dedbde;}
+
+div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee;margin: 30px 60px 0px 60px; }
+div.tabContent1 { border: 0px solid #c9c3ba; padding: 0.5em; }
+div.tabContent.hide { display: none; }
+div.SearchContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee;margin: 30px 60px 0px 60px; }
+#dvTable { border: 0px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee;margin: 0px 0px 0px 0px; text-align:center;    overflow-x: auto;
+div#cuser { padding-top: .25em;
+    padding-bottom: .25em;}
+//white-space: nowrap;);
+//}
+
+/* Footer */
+
+#footer {
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+#footer p {
+    text-align: center;
+    color: rgba(255,255,255,0.2);
+}
+
+#footer a {
+    color: rgba(255,255,255,0.3);
+}
+
+/*********************************************************************************/
+/* TABLE Style                                                                  */
+/*********************************************************************************/
+
+table#tab1 { width:100%;}
+table#tab1 td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+
+table#tab2 { width:100%;}
+table#tab2 td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+table#tab3 { width:100%;}
+table#tab3 td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+table#tab4 { width:100%;}
+table#tab4 td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+
+table#Searchtable { width:100%;}
+table#Searchtable td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+table#Viewtable { width:60%;}
+table#Viewtable td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+
+table#cuser { width:60%;}
+table#cuser td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+
+table#duser { width:60%;}
+table#duser td{  padding-top: .25em;
+    padding-bottom: .25em;}
+
+
+
+/** Select a Table to Highlight**/
+
+div.scrolltable {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+div.scrolltable > .header { }
+div.scrolltable > .body {
+    width: -webkit-fit-content;
+    overflow-y: scroll;
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+
+
+div.selected {
+    background-color: lightgreen;
+    color: #FFF;
+}
+
+
+div#login {
+    background: white;
+    width: 40%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    font-family: lato;
+    position: relative;
+    background: white;
+    border-radius: 10px;
+}
+div#login  header {
+    background:#308576;
+    padding: 30px 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+}
+div#login label {
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    position: relative;
+}
+div#login label span {
+    color: #308576;
+    font-size: 2em;
+    position: absolute;
+    left: 2.3em;
+    top: -10px;
+}
+div#login  input {
+    display: block;
+    width: 78%;
+    margin-left: 20px;
+    padding: 5px 20px;
+    font-size: 1em;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+div#login  .help {
+    margin-left: 20px;
+    font-size: 0.8em;
+    color: #777;
+}
+div#login  button {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: inherit;
+    color: white;
+    background: #308576;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1.3em;
+    font-weight: 400;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+div#login  button:hover {
+    background: #308576;
+}
+
+
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+

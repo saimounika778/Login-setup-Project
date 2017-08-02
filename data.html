@@ -1,0 +1,136 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="text/html; charset=utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="default.css" rel="stylesheet" type="text/css" media="all"><link href="fonts.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body onload="init(true)">
+<div id="wrapper">
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><a href="#">PROGRESS CARD</a></h1>
+                <p>KAISER PERMANENTE</p>
+            </div>
+        </div>
+        <div id="menu" class="container">
+            <ul>
+                <li><a href="AchievementsTypeSelection.html" accesskey="1" title="">Home</a> </li></ul>
+        </div>
+        <div align="right"><label id="loggedInUserName" name="loggedInUserName" style="display:inline-block; margin-right:5px"></label>
+            <button style="display:inline-block; margin-right:60px; float:right" onclick="Logout()">Logout</button>
+        </div>
+    </div>
+    <div style="margin-left:55px"><select id="usersCbx" name="usersCbx" hidden="true" onchange="UserIdChanged()"></select>
+        <select id="DatesCbx" name="DatesCbx"  onchange="DateChanged()">
+        </select> </div>
+    <div class="tabContent" id="tab1">
+        <h1>
+            <div style="text-align:center">Resource Effort</div>
+        </h1>
+        <div id="divtab1">
+            <table id="tab1">
+                <tbody>
+                <tr>
+                    <h2>Automation Scripts Built</h2>
+                    <td>Count</td>
+                    <td><input type="text" id="scriptBuildCount"></td>
+                    <td>Script Built Details</td>
+                    <td><textarea id="scriptBuildTCs"  placeholder="Please enter Test Case Names of Automation Scripts Built..." style="min-width: 300px;min-height: 50px;" required></textarea> </td>
+                </tr>
+            </table>
+        </div>
+        <div id="divtab1">
+            <table id="tab1">
+                <tr>
+                    <h2>Automation Execution</h2>
+                    <td>Count</td>
+                    <td><input type="text" id="executionCount" required></td>
+                    <td>Execution Details</td>
+                    <td><textarea id="executionTCs"  placeholder="Please enter Test Case Names for Automation Execution..." style="min-width: 300px;min-height: 50px;" required></textarea> </td>
+                </tr>
+            </table>
+        </div>
+        <div id="divtab1">
+            <table id="tab1">
+                <tr>
+                    <h2>Data Creation</h2>
+                    <td>Count</td>
+                    <td><input type="text" id="dataCreationCount" required></td>
+                    <td>Data Creation Details</td>
+                    <td><textarea id="dataCreationTCs"  placeholder="Please enter details for data creation..." style="min-width: 300px;min-height: 50px;" required></textarea> </td>
+
+                </tr>
+            </table>
+        </div>
+        <div id="divtab1">
+            <table id="tab1">
+                <tr>
+                    <h2>BAT</h2>
+                    <td>Count</td>
+                    <td><input type="text" id="batCount" required></td>
+                    <td>BAT Details</td>
+                    <td><textarea id="batTCs"  placeholder="Please enter details for BAT..." style="min-width: 300px;min-height: 50px;" required></textarea> </td>
+                </tr>
+            </table>
+        </div>
+        <div id="divtab1">
+            <table id="tab1">
+                <tr>
+                    <h2>KT\Brainstroming</h2>
+                    <td>Count</td>
+                    <td><input type="text" id="ktcount" required></td>
+                    <td>KT Details</td>
+                    <td><textarea id="ktTCs"  placeholder="Please enter details for KT Given..." style="min-width: 300px;min-height: 50px;" required></textarea> </td>
+                </tr>
+            </table>
+        </div>
+        <div id="divtab1">
+            <table id="tab1">
+                <tr>
+                    <h2>Valid Defects</h2>
+                    <td>Count</td>
+                    <td><input type="text" id="defectsCount" required></td>
+                    <td>Defect Id's</td>
+                    <td><textarea id="defectsTCs"  placeholder="Please enter details for defect raised with defect numbers..." style="min-width: 300px;min-height: 50px;" required></textarea> </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="divtab1">
+            <table id="tab1">
+                <tbody>
+                <tr>
+                    <div>
+                        <h2>Overall fortnight Achivevements </h2>
+                    </div>
+                    <td>Key Achievements </td>
+                    <td><textarea id="achievements" placeholder="Please enter the key Achivemnts..." style="min-width:300px; min-height:50px"></textarea>
+                    </td>
+                    <td>Milestones</td>
+                    <td><textarea id="milestones" placeholder="Please enter the Milestones.." style="min-width:300px; min-height:50px"></textarea>
+                    </td>
+                    <div></div>
+                </tr>
+                <tr>
+                    <div></div>
+                    <td>Beyond Work Tasks</td>
+                    <td><textarea id="beyondWorkTasks" placeholder="Please enter the beyond Works..." style="min-width:300px; min-height:50px"></textarea>
+                    </td>
+                    <div></div>
+                </tr>
+                </tbody>
+            </table>
+            <div align="center"><button id="clearTxtBoxes" type="button" onclick="ClearTextBoxes()" style=" display:inline-block;margin: 0 auto;background: #308576;"> Clear Values</button>
+                <input id="insertrecord" type="button" value="Submit" onclick="InsertDetails()" style=" display:inline-block;margin: 0 auto;background: #308576;"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="AchievementsTypeSelection.js"></script>
+<script src="Helper.js"></script>
+<script src="insertdetails.js"></script>
+</body>
+</html>
